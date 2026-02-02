@@ -1,0 +1,25 @@
+:root {
+    --main-color: #b46924;
+    --light-color: #fff7f1;
+    --color: #b1886a;
+    --second-color: #c0b08e;
+    --background-color: #dfe0df;
+    --dark-color: #343333;
+    --text: #ff8888;
+    --sctext: #ffbfbd;
+}
+
+.hero-section {
+    background-color: aquamarine;
+    display: block;
+    /* margin-top: 60px; */
+    width: 100%;
+    height: calc(100vh - 160px);
+}
+
+.hero-section p {
+    padding-top: 300px;
+    font-size: 50px;
+    color: #343333;
+    text-align: center;
+}

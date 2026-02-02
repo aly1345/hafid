@@ -1,0 +1,61 @@
+:root {
+    --main-color: #b46924;
+    --light-color: #fff7f1;
+    --color: #b1886a;
+    --second-color: #c0b08e;
+    --background-color: #dfe0df;
+    --background-sec-color: #f5efdc;
+    --dark-color: #343333;
+}
+
+
+.control-section {
+    width: 100%;
+    background-color: var(--dark-color);
+}
+
+.control-section-buttons {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    min-height: 100px;
+    padding: 30px 0;
+}
+
+.control-section-button {
+    display: inline-block;
+    margin: 0.5%;
+    width: 5.65%;
+    min-width: 40px;
+    height: 40%;
+}
+
+.control-section-button .button- {
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.control-section-button .button-selected {
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    color: var(--dark-color);
+    border-radius: 8px;
+}
+
+.without-button {
+    height: 40%;
+}
+
+.without-button p {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}

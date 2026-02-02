@@ -1,0 +1,276 @@
+:root {
+    --main-color: #b46924;
+    --light-color: #fff7f1;
+    --color: #b1886a;
+    --second-color: #c0b08e;
+    --background-color: #dfe0df;
+    --dark-color: #343333;
+}
+
+.heart-product {
+    height: 180px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: var(--color);
+    border-radius: 50px;
+    color: white;
+    margin: 20px 0;
+}
+
+.heart-product-img {
+    width: 20%;
+    height: 100%;
+    text-align: right;
+    padding: 20px;
+}
+
+.heart-product-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+
+}
+
+.heart-product-info {
+    padding: 0 20px;
+    margin: inherit;
+    width: 75%;
+    text-align: right;
+    background-color: var(--dark-color);
+    border-radius: 40px;
+}
+
+.heart-product-name-price {
+    height: 40%;
+    padding: 30px 0 10px 0;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.heart-product-name {
+    width: 40%;
+}
+
+.heart-product-price {
+    width: 40%;
+    text-align: right;
+}
+
+.heart-product-price p {
+    display: flex;
+    flex-direction: row;
+}
+
+.heart-product-price p span {
+    margin: 0 10px;
+}
+
+/* ------------------------------------------- */
+
+.heart-product-content-clicked {
+    padding: 10px;
+    height: 60%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.heart-product-content {
+    width: 70%;
+    height: 100%;
+}
+
+.heart-product-clicked {
+    width: 30%;
+    height: 100%;
+}
+
+.heart-clicked {
+    width: 20%;
+    height: 70%;
+    background-color: var(--main-color);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.heart-clicked-icon {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+.heart-clicked {
+    cursor: pointer;
+}
+
+.heart-clicked-icon.filled {
+    color: #ff4757;
+}
+
+.heart-clicked:hover {
+    background-color: var(--dark-color);
+    color: rgba(186, 186, 186, 0.687);
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------- */
+
+@media screen and (min-width:501px) and (max-width:1300px) {
+
+    .heart-product {
+        height: 160px;
+        border-radius: 40px;
+        margin: 15px 0;
+    }
+
+    .heart-product-img {
+        width: 28%;
+        padding: 10px;
+    }
+
+    .heart-product-img img {
+        border-radius: 20px;
+    }
+
+    .heart-product-info {
+        padding: 0 10px;
+        width: 70%;
+        border-radius: 30px;
+    }
+
+    .heart-product-name-price {
+        padding: 15px 0 8px 0;
+        font-size: 20px;
+    }
+
+    .heart-product-name {
+        width: 60%;
+    }
+
+    .heart-product-price {
+        width: 40%;
+        font-size: 16px;
+    }
+
+    .heart-product-price p span {
+        margin: 0 8px;
+    }
+
+    .heart-product-content-clicked {
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .heart-product-content {
+        width: 50%;
+        font-size: 12px;
+    }
+
+    .heart-product-clicked {
+        width: 50%;
+    }
+
+    .heart-clicked {
+        width: 13%;
+        height: 35%;
+        background-color: var(--main-color);
+        text-align: center;
+        padding: 3px;
+        border-radius: 8px;
+        margin: auto;
+    }
+
+    .heart-clicked-icon {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .heart-product {
+        height: 140px;
+        border-radius: 30px;
+        margin: 10px 0;
+    }
+
+    .heart-product-img {
+        width: 36%;
+        padding: 8px;
+    }
+
+    .heart-product-img img {
+        border-radius: 18px;
+    }
+
+    .heart-product-info {
+        padding: 0 7px;
+        width: 62%;
+        border-radius: 20px;
+    }
+
+    .heart-product-name-price {
+        padding: 10px 0 6px 0;
+        font-size: 14px;
+    }
+
+    .heart-product-name {
+        width: 55%;
+    }
+
+    .heart-product-price {
+        width: 45%;
+        font-size: 10px;
+    }
+
+    .heart-product-price p span {
+        margin: 0 6px;
+    }
+
+    .heart-product-content-clicked {
+        padding: 4px;
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heart-product-content {
+        width: 100%;
+        height: 30%;
+        font-size: 10px;
+    }
+
+    .heart-product-clicked {
+        width: 100%;
+        height: 70%;
+    }
+
+    .heart-clicked {
+        width: 10%;
+        height: 40%;
+        background-color: var(--main-color);
+        text-align: center;
+        padding: 2px;
+        border-radius: 5px;
+        margin: auto;
+    }
+
+    .heart-clicked-icon {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+    }
+}

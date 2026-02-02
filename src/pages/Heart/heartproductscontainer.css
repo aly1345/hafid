@@ -1,0 +1,35 @@
+.heart-products-container {
+    flex: 3;
+    width: 100%;
+    margin: 5% 0 20px;
+}
+
+.no-favorites-message {
+    text-align: center;
+    padding: 60px 20px;
+    color: #666;
+}
+
+.no-favorites-message h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.no-favorites-message p {
+    font-size: 16px;
+    color: #888;
+}
+
+@media screen and (min-width:501px) and (max-width:1300px) {
+    .heart-products-container {
+        margin: 5% 0 10px;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    .heart-products-container {
+        margin: 5% 0 8px;
+    }
+}

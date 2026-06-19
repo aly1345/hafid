@@ -1,0 +1,16 @@
+@import url('../../../index.css');
+
+
+.hero-section {
+    background-color: var(--background-color);
+    display: block;
+    width: 100%;
+    height: calc(100vh - 160px);
+}
+
+.hero-section p {
+    padding-top: 300px;
+    font-size: 50px;
+    color: var(--dark-text);
+    text-align: center;
+}

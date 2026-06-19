@@ -1,0 +1,200 @@
+/* @import url('../../../index.css');
+
+
+
+
+
+.home-products-show {
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px 30px;
+    justify-items: center;
+    direction: rtl;
+}
+
+@media screen and (min-width:801px) and (max-width:1000px) {
+    .home-products-show {
+        margin-top: 100px;
+        width: 100%;
+        direction: rtl;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:800px) {
+    .home-products-show {
+        margin-top: 100px;
+        width: 100%;
+        direction: rtl;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:501px) and (max-width:600px) {
+    .home-products-show {
+        margin-top: 100px;
+        width: 100%;
+        direction: rtl;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .home-products-show {
+        margin-top: 100px;
+        width: 100%;
+        justify-items: center;
+        direction: rtl;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @import url('../../../index.css');
+
+.home-products-show {
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    direction: rtl;
+}
+
+@media screen and (min-width:801px) and (max-width:1000px) {
+    .home-products-show {
+        margin-top: 100px;
+        width: 100%;
+        direction: rtl;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:800px) {
+    .home-products-show {
+        margin-top: 100px;
+        width: 100%;
+        direction: rtl;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:501px) and (max-width:600px) {
+    .home-products-show {
+        margin-top: 100px;
+        width: 100%;
+        direction: rtl;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .home-products-show {
+        margin-top: 50px;
+        width: 100%;
+        direction: rtl;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* homeproductsshow.css */
+@import url('../../../index.css');
+
+.home-products-show {
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    direction: rtl;
+    padding: 0 10px 40px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:500px) {
+    .home-products-show {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-top: 50px;
+    }
+}

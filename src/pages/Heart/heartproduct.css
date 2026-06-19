@@ -1,0 +1,766 @@
+/* @import url('../../index.css');
+
+
+.heart-product {
+    height: 180px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: var(--color);
+    border-radius: 50px;
+    color: var(--white-text);
+    margin: 20px 0;
+}
+
+.heart-product-img {
+    width: 20%;
+    height: 100%;
+    text-align: right;
+    padding: 20px;
+}
+
+.heart-product-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+
+}
+
+.heart-product-info {
+    padding: 0 20px;
+    margin: inherit;
+    width: 75%;
+    text-align: right;
+    background-color: var(--background-dark-color);
+    border-radius: 40px;
+}
+
+.heart-product-name-price {
+    height: 40%;
+    padding: 30px 0 10px 0;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.heart-product-name {
+    width: 40%;
+}
+
+.heart-product-price {
+    width: 40%;
+    text-align: right;
+}
+
+.heart-product-price p {
+    display: flex;
+    flex-direction: row;
+}
+
+.heart-product-price p span {
+    margin: 0 10px;
+}
+
+
+.heart-product-content-clicked {
+    padding: 10px;
+    height: 60%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.heart-product-content {
+    width: 70%;
+    height: 100%;
+}
+
+.heart-product-clicked {
+    width: 30%;
+    height: 100%;
+}
+
+.heart-clicked {
+    width: 20%;
+    height: 70%;
+    background-color: var(--main-color);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.heart-clicked-icon {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+.heart-clicked {
+    cursor: pointer;
+}
+
+.heart-clicked-icon.filled {
+    color: var(--second-color);
+}
+
+.heart-clicked:hover {
+    background-color: var(--background-dark-color);
+    color: var(--color);
+}
+
+
+@media screen and (min-width:501px) and (max-width:1300px) {
+
+    .heart-product {
+        height: 160px;
+        border-radius: 40px;
+        margin: 15px 0;
+    }
+
+    .heart-product-img {
+        width: 28%;
+        padding: 10px;
+    }
+
+    .heart-product-img img {
+        border-radius: 20px;
+    }
+
+    .heart-product-info {
+        padding: 0 10px;
+        width: 70%;
+        border-radius: 30px;
+    }
+
+    .heart-product-name-price {
+        padding: 15px 0 8px 0;
+        font-size: 20px;
+    }
+
+    .heart-product-name {
+        width: 60%;
+    }
+
+    .heart-product-price {
+        width: 40%;
+        font-size: 16px;
+    }
+
+    .heart-product-price p span {
+        margin: 0 8px;
+    }
+
+    .heart-product-content-clicked {
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .heart-product-content {
+        width: 50%;
+        font-size: 12px;
+    }
+
+    .heart-product-clicked {
+        width: 50%;
+    }
+
+    .heart-clicked {
+        width: 13%;
+        height: 35%;
+        background-color: var(--main-color);
+        text-align: center;
+        padding: 3px;
+        border-radius: 8px;
+        margin: auto;
+    }
+
+    .heart-clicked-icon {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .heart-product {
+        height: 140px;
+        border-radius: 30px;
+        margin: 10px 0;
+    }
+
+    .heart-product-img {
+        width: 36%;
+        padding: 8px;
+    }
+
+    .heart-product-img img {
+        border-radius: 18px;
+    }
+
+    .heart-product-info {
+        padding: 0 7px;
+        width: 62%;
+        border-radius: 20px;
+    }
+
+    .heart-product-name-price {
+        padding: 10px 0 6px 0;
+        font-size: 14px;
+    }
+
+    .heart-product-name {
+        width: 55%;
+    }
+
+    .heart-product-price {
+        width: 45%;
+        font-size: 10px;
+    }
+
+    .heart-product-price p span {
+        margin: 0 6px;
+    }
+
+    .heart-product-content-clicked {
+        padding: 4px;
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heart-product-content {
+        width: 100%;
+        height: 30%;
+        font-size: 10px;
+    }
+
+    .heart-product-clicked {
+        width: 100%;
+        height: 70%;
+    }
+
+    .heart-clicked {
+        width: 10%;
+        height: 40%;
+        background-color: var(--main-color);
+        text-align: center;
+        padding: 2px;
+        border-radius: 5px;
+        margin: auto;
+    }
+
+    .heart-clicked-icon {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('../../index.css');
+
+.heart-product {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: var(--color);
+    border-radius: 30px;
+    color: var(--white-text);
+    margin: 20px 0;
+    padding: 15px;
+    box-sizing: border-box;
+    gap: 15px;
+    /* ظل خفيف للفصل بين المنتجات */
+    box-shadow: 0 4px 10px var(--dark-text-shadow);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.heart-product:hover {
+    border-color: var(--main-color);
+    box-shadow: 0 6px 15px var(--dark-text-shadow);
+}
+
+/* قسم الصورة - معزول بحدود واضحة */
+.heart-product-img {
+    width: 180px;
+    height: 180px;
+    min-width: 140px;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: var(--white-text);
+    padding: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--white-text);
+    flex-shrink: 0;
+}
+
+.heart-product-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.heart-product:hover .heart-product-img img {
+    transform: scale(1.03);
+}
+
+/* قسم المعلومات - معزول بحدود وخلفية مختلفة */
+.heart-product-info {
+    flex: 1;
+    background-color: var(--background-dark-color);
+    border-radius: 25px;
+    padding: 18px 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid var(--color);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+/* اسم المنتج وسعره - مع مسافات واضحة */
+.heart-product-name-price {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--color);
+    gap: 15px;
+}
+
+.heart-product-name {
+    flex: 1;
+}
+
+.heart-product-name h3 {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--white-text);
+    margin: 0;
+    line-height: 1.3;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.heart-product-price {
+    background-color: var(--main-color);
+    padding: 8px 18px;
+    border-radius: 40px;
+    min-width: 120px;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--white-text);
+}
+
+.heart-product-price p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--white-text);
+}
+
+.heart-product-price p span {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* قسم المحتوى وزر المفضلة - مع مسافات واضحة */
+.heart-product-content-clicked {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+}
+
+.heart-product-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.heart-product-content p {
+    margin: 0;
+    font-size: 18px;
+    color: var(--white-text);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px 15px;
+    border-radius: 30px;
+    border-right: 4px solid var(--main-color);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.heart-product-content p strong {
+    color: var(--main-color);
+    min-width: 50px;
+    font-size: 16px;
+}
+
+/* زر المفضلة - معزول بشكل واضح */
+.heart-product-clicked {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart-clicked {
+    width: 65px;
+    height: 65px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid var(--white-text);
+}
+
+.heart-clicked:hover {
+    background-color: var(--second-color);
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.heart-clicked-icon {
+    font-size: 32px;
+    color: var(--white-text);
+    transition: all 0.3s ease;
+}
+
+.heart-clicked-icon.filled {
+    color: var(--second-color);
+}
+
+.heart-clicked:hover .heart-clicked-icon {
+    color: var(--white-text);
+    transform: scale(1.1);
+}
+
+/* ========== تحسينات للشاشات المتوسطة (900px - 1200px) ========== */
+@media screen and (max-width: 1200px) {
+    .heart-product-img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .heart-product-name h3 {
+        font-size: 22px;
+    }
+
+    .heart-product-price {
+        min-width: 100px;
+        padding: 6px 15px;
+    }
+
+    .heart-product-price p {
+        font-size: 20px;
+    }
+
+    .heart-product-price p span {
+        font-size: 16px;
+    }
+
+    .heart-product-content p {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+
+    .heart-clicked {
+        width: 55px;
+        height: 55px;
+    }
+
+    .heart-clicked-icon {
+        font-size: 28px;
+    }
+}
+
+/* ========== تحسينات للشاشات (700px - 900px) ========== */
+@media screen and (max-width: 900px) {
+    .heart-product {
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .heart-product-img {
+        width: 140px;
+        height: 140px;
+        min-width: 120px;
+    }
+
+    .heart-product-info {
+        padding: 15px;
+    }
+
+    .heart-product-name h3 {
+        font-size: 20px;
+    }
+
+    .heart-product-price {
+        min-width: 90px;
+        padding: 5px 12px;
+    }
+
+    .heart-product-price p {
+        font-size: 18px;
+    }
+
+    .heart-product-price p span {
+        font-size: 14px;
+    }
+
+    .heart-product-content-clicked {
+        gap: 15px;
+    }
+
+    .heart-product-content p {
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+
+    .heart-clicked {
+        width: 50px;
+        height: 50px;
+    }
+
+    .heart-clicked-icon {
+        font-size: 24px;
+    }
+}
+
+/* ========== تحسينات للشاشات (500px - 700px) ========== */
+@media screen and (max-width: 700px) {
+    .heart-product {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .heart-product-img {
+        width: 100%;
+        height: 220px;
+        margin-bottom: 5px;
+    }
+
+    .heart-product-info {
+        width: 100%;
+        padding: 18px;
+    }
+
+    .heart-product-name-price {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 12px;
+    }
+
+    .heart-product-name h3 {
+        font-size: 22px;
+    }
+
+    .heart-product-price {
+        width: 100%;
+        max-width: 150px;
+        margin: 0 auto;
+    }
+
+    .heart-product-content-clicked {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .heart-product-content {
+        width: 100%;
+    }
+
+    .heart-product-content p {
+        width: 100%;
+        font-size: 16px;
+        padding: 8px 15px;
+        justify-content: flex-start;
+    }
+
+    .heart-product-clicked {
+        width: 100%;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    .heart-clicked {
+        width: 60px;
+        height: 60px;
+    }
+
+    .heart-clicked-icon {
+        font-size: 28px;
+    }
+}
+
+/* ========== تحسينات للشاشات الصغيرة (حتى 500px) ========== */
+@media screen and (max-width: 500px) {
+    .heart-product {
+        padding: 12px;
+        margin: 15px 0;
+    }
+
+    .heart-product-img {
+        height: 200px;
+    }
+
+    .heart-product-info {
+        padding: 15px;
+    }
+
+    .heart-product-name h3 {
+        font-size: 20px;
+    }
+
+    .heart-product-price {
+        max-width: 130px;
+    }
+
+    .heart-product-price p {
+        font-size: 18px;
+    }
+
+    .heart-product-content p {
+        font-size: 15px;
+        padding: 6px 12px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .heart-product-content p strong {
+        min-width: 45px;
+        font-size: 14px;
+    }
+
+    .heart-clicked {
+        width: 55px;
+        height: 55px;
+    }
+
+    .heart-clicked-icon {
+        font-size: 26px;
+    }
+}
+
+/* ========== تحسينات للشاشات الصغيرة جداً (حتى 380px) ========== */
+@media screen and (max-width: 380px) {
+    .heart-product-img {
+        height: 180px;
+    }
+
+    .heart-product-info {
+        padding: 12px;
+    }
+
+    .heart-product-name h3 {
+        font-size: 18px;
+    }
+
+    .heart-product-price {
+        max-width: 120px;
+        padding: 4px 10px;
+    }
+
+    .heart-product-price p {
+        font-size: 16px;
+    }
+
+    .heart-product-content p {
+        font-size: 14px;
+        padding: 5px 10px;
+        flex-wrap: wrap;
+    }
+
+    .heart-product-content p strong {
+        min-width: 40px;
+        font-size: 13px;
+    }
+
+    .heart-clicked {
+        width: 50px;
+        height: 50px;
+    }
+
+    .heart-clicked-icon {
+        font-size: 24px;
+    }
+}
+
+/* ========== تحسينات للشاشات الصغيرة جداً جداً (حتى 320px) ========== */
+@media screen and (max-width: 320px) {
+    .heart-product-img {
+        height: 160px;
+    }
+
+    .heart-product-name h3 {
+        font-size: 16px;
+    }
+
+    .heart-product-price p {
+        font-size: 15px;
+    }
+
+    .heart-product-content p {
+        font-size: 13px;
+        padding: 4px 8px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .heart-product-content p strong {
+        min-width: auto;
+    }
+
+    .heart-clicked {
+        width: 45px;
+        height: 45px;
+    }
+
+    .heart-clicked-icon {
+        font-size: 22px;
+    }
+}

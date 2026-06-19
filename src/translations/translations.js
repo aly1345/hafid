@@ -1,0 +1,574 @@
+// const translations = {
+//     ar: {
+//         // Global
+//         'siteName': 'حفيد الملك',
+//         'siteNameEnglish': 'Hafid Elmalek',
+//         'loading': 'جاري التحميل...',
+//         'search': 'بحث',
+//         'searchPlaceholder': 'ابحث عن المنتج...',
+//         'addToCart': 'أضف إلى العربة',
+//         'remove': 'إزالة',
+//         'quantity': 'الكمية',
+//         'total': 'الإجمالي',
+//         'price': 'السعر',
+//         'color': 'اللون',
+//         'colors': 'الألوان',
+//         'size': 'المقاس',
+//         'sizes': 'المقاسات',
+//         'description': 'الوصف',
+//         'comments': 'التعليقات',
+//         'home': 'الرئيسية',
+//         'cart': 'العربة',
+//         'wishlist': 'المفضلة',
+//         'checkout': 'الدفع',
+//         'categories': 'الأقسام',
+//         'allProducts': 'الكل',
+//         'allAccessories': 'الكل',
+//         'mensSneakers': 'كوتشي رجالي',
+//         'youthSneakers': 'كوتشي شبابي وبناتي',
+//         'mensShoes': 'حذاء رجالي',
+//         'womensShoes': 'حذاء نسائي',
+//         'accessories': 'الاكسسوارات',
+//         'backpacks': 'شنطة ظهر',
+//         'crossBags': 'شنطة كروس',
+//         'wallets': 'محفظة',
+//         'bracelets': 'اسوار يد',
+//         'watches': 'ساعات',
+//         'shoeCleaners': 'منظف احذية',
+//         'emptyCart': 'سلة التسوق فارغة',
+//         'addToCartMessage': 'أضف منتجات إلى سلة التسوق لرؤيتها هنا',
+//         'emptyWishlist': 'لا توجد منتجات في قائمة المفضلات',
+//         'addToWishlistMessage': 'اضغط على القلب في أي منتج لإضافته إلى المفضلات',
+//         'proceedToCheckout': 'أذهب لإتمام عملية الدفع',
+//         'complete': 'إتمام',
+//         'productName': 'اسم المنتج',
+//         'productPrice': 'السعر',
+//         'notSpecified': 'غير محدد',
+//         'increase': 'زيادة',
+//         'decrease': 'نقصان',
+//         'goToPayment': 'أذهب لإتمام عملية الدفع',
+//         'name': 'الأسم',
+//         'address': 'العنوان',
+//         'phone': 'رقم الهاتف',
+//         'whatsapp': 'رقم الواتساب',
+//         'fullName': 'الأسم ثلاثي',
+//         'cashOnDelivery': 'الدفع نقداً عند الاستلام',
+//         'enterFullName': 'أدخل الاسم الثلاثي',
+//         'enterAddress': 'أدخل العنوان الكامل',
+//         'enterPhone': 'مثال: 01234567890',
+//         'enterWhatsapp': 'مثال: 01234567890',
+//         'completePurchase': 'اتمام عملية الشراء',
+//         'orderCompleted': 'تم إتمام الشراء',
+//         'goToHomePage': 'اضغط للانتقال إلى الصفحة الرئيسية',
+//         'go': 'انتقال',
+//         'currency': 'جنيه',
+//         'addComment': 'اضافة التعليق',
+//         'addCommentPlaceholder': 'اكتب تعليقك هنا...',
+//         'selectColorFirst': 'اختر لون أولاً',
+//         'selectSizeFirst': 'اختر مقاس أولاً',
+//         'selectColorAndSize': 'اختر اللون والمقاس',
+//         'selectSizeForColor': 'اختر مقاساً للون {{color}}',
+//         'addToCartButton': 'أضف إلى العربة',
+//         'noProductsInCategory': 'لا توجد منتجات في هذا القسم',
+//         'chooseAnotherCategory': 'يرجى اختيار قسم آخر',
+//         'noProductsOnPage': 'لا توجد منتجات في هذه الصفحة',
+//         'goToAnotherPage': 'يرجى الانتقال إلى صفحة أخرى',
+//         'noSearchResults': 'لا توجد نتائج بحث عن: "{{query}}"',
+//         'tryOtherSearch': 'يرجى المحاولة بكلمات بحث أخرى',
+//         'viewProduct': 'عرض المنتج',
+//         'heroSection': 'قسم البطل',
+//         'footerTagline': 'أحذية عالمية',
+//         'footerDescription': 'شركة مصرية رائدة في توفير أفضل أنواع الأحذية العالمية والمحلية بجودة عالية وأناقة لا تضاهى. نقدم أحدث صيحات الموضة مع الحفاظ على الراحة والأصالة.',
+//         'contactUs': 'تواصل معنا',
+//         'followUs': 'تابعنا على وسائل التواصل الاجتماعي',
+//         'allRightsReserved': 'جميع الحقوق محفوظة',
+//         'paymentMethods': 'طرق الدفع المتاحة:',
+//         'egyptAddress': '28 شارع الطالبية، الهرم، الجيزة، مصر',
+//         'egyptPhone': '+20 123 456 7890',
+//         'email': 'hafidelmalk@gmail.com',
+//         'facebook': 'Facebook',
+//         'instagram': 'Instagram',
+//         'tiktok': 'TikTok',
+//         'twitter': 'Twitter',
+//         'whatsappSocial': 'WhatsApp',
+//         'callUs': 'اتصل بنا',
+
+//         // Invoice
+//         'invoice': 'الفاتورة',
+//         'product': 'المنتج',
+//         'totalPrice': 'السعر الإجمالي',
+//         'subtotal': 'المجموع الفرعي',
+
+//         // Pagination
+//         'page': 'صفحة',
+
+//         // Error Messages
+//         'productNotFound': 'المنتج غير موجود',
+//         'productNotFoundMessage': 'عذرًا، المنتج الذي تبحث عنه غير موجود أو تم إزالته.',
+//         'backToHome': 'العودة للصفحة الرئيسية',
+
+//         // Form Validation
+//         'requiredField': 'هذا الحقل مطلوب',
+//         'invalidPhone': 'رقم الهاتف غير صحيح',
+
+//         // Order Messages
+//         'orderSuccess': 'تم إتمام عملية الشراء بنجاح!',
+//         'orderNumber': 'رقم طلبك',
+//         'orderError': 'حدث خطأ أثناء حفظ الطلب، يرجى المحاولة مرة أخرى',
+
+//         // Cart Messages
+//         'productAlreadyInCart': 'هذا المنتج مضاف بالفعل إلى العربة بنفس المواصفات!',
+//         'productAddedToCart': 'تم إضافة المنتج إلى العربة بنجاح!',
+
+//         // Wishlist Messages
+//         'productAddedToWishlist': 'تم إضافة المنتج إلى المفضلة',
+//         'productRemovedFromWishlist': 'تم إزالة المنتج من المفضلة',
+
+//         // في كائن ar:
+//         'noColors': 'لا توجد ألوان متاحة',
+//         'noSizesForColor': 'لا توجد مقاسات متاحة لهذا اللون',
+//         'noComments': 'لا توجد تعليقات لهذا المنتج بعد.',
+//     },
+
+//     en: {
+//         // Global
+//         'siteName': 'Hafid Elmalek',
+//         'siteNameEnglish': 'Hafid Elmalek',
+//         'loading': 'Loading...',
+//         'search': 'Search',
+//         'searchPlaceholder': 'Search for product...',
+//         'addToCart': 'Add to Cart',
+//         'remove': 'Remove',
+//         'quantity': 'Quantity',
+//         'total': 'Total',
+//         'price': 'Price',
+//         'color': 'Color',
+//         'colors': 'Colors',
+//         'size': 'Size',
+//         'sizes': 'Sizes',
+//         'description': 'Description',
+//         'comments': 'Comments',
+//         'home': 'Home',
+//         'cart': 'Cart',
+//         'wishlist': 'Wishlist',
+//         'checkout': 'Checkout',
+//         'categories': 'Categories',
+//         'allProducts': 'All',
+//         'allAccessories': 'All',
+//         'mensSneakers': "Men's Sneakers",
+//         'youthSneakers': 'Youth Sneakers',
+//         'mensShoes': "Men's Shoes",
+//         'womensShoes': "Women's Shoes",
+//         'accessories': 'Accessories',
+//         'backpacks': 'Backpacks',
+//         'crossBags': 'Cross Bags',
+//         'wallets': 'Wallets',
+//         'bracelets': 'Bracelets',
+//         'watches': 'Watches',
+//         'shoeCleaners': 'Shoe Cleaners',
+//         'emptyCart': 'Your cart is empty',
+//         'addToCartMessage': 'Add products to your cart to see them here',
+//         'emptyWishlist': 'No products in wishlist',
+//         'addToWishlistMessage': 'Click the heart on any product to add it to wishlist',
+//         'proceedToCheckout': 'Proceed to Checkout',
+//         'complete': 'Complete',
+//         'productName': 'Product Name',
+//         'productPrice': 'Price',
+//         'notSpecified': 'Not Specified',
+//         'increase': 'Increase',
+//         'decrease': 'Decrease',
+//         'goToPayment': 'Go to Complete Payment',
+//         'name': 'Name',
+//         'address': 'Address',
+//         'phone': 'Phone Number',
+//         'whatsapp': 'WhatsApp Number',
+//         'fullName': 'Full Name',
+//         'cashOnDelivery': 'Cash on Delivery',
+//         'enterFullName': 'Enter full name',
+//         'enterAddress': 'Enter complete address',
+//         'enterPhone': 'Example: 01234567890',
+//         'enterWhatsapp': 'Example: 01234567890',
+//         'completePurchase': 'Complete Purchase',
+//         'orderCompleted': 'Order Completed',
+//         'goToHomePage': 'Click to go to Home Page',
+//         'go': 'Go',
+//         'currency': 'EGP',
+//         'addComment': 'Add Comment',
+//         'addCommentPlaceholder': 'Write your comment here...',
+//         'selectColorFirst': 'Select color first',
+//         'selectSizeFirst': 'Select size first',
+//         'selectColorAndSize': 'Select Color and Size',
+//         'selectSizeForColor': 'Select size for {{color}}',
+//         'addToCartButton': 'Add to Cart',
+//         'noProductsInCategory': 'No products in this category',
+//         'chooseAnotherCategory': 'Please choose another category',
+//         'noProductsOnPage': 'No products on this page',
+//         'goToAnotherPage': 'Please go to another page',
+//         'noSearchResults': 'No search results for: "{{query}}"',
+//         'tryOtherSearch': 'Please try other search terms',
+//         'viewProduct': 'View Product',
+//         'heroSection': 'Hero Section',
+//         'footerTagline': 'Global Shoes',
+//         'footerDescription': 'An Egyptian leading company in providing the best types of global and local shoes with high quality and unparalleled elegance. We offer the latest fashion trends while maintaining comfort and authenticity.',
+//         'contactUs': 'Contact Us',
+//         'followUs': 'Follow us on social media',
+//         'allRightsReserved': 'All rights reserved',
+//         'paymentMethods': 'Payment Methods Available:',
+//         'egyptAddress': '28 El-Talabeya Street, Haram, Giza, Egypt',
+//         'egyptPhone': '+20 123 456 7890',
+//         'email': 'hafidelmalk@gmail.com',
+//         'facebook': 'Facebook',
+//         'instagram': 'Instagram',
+//         'tiktok': 'TikTok',
+//         'twitter': 'Twitter',
+//         'whatsappSocial': 'WhatsApp',
+//         'callUs': 'Call Us',
+
+//         // Invoice
+//         'invoice': 'Invoice',
+//         'product': 'Product',
+//         'totalPrice': 'Total Price',
+//         'subtotal': 'Subtotal',
+
+//         // Pagination
+//         'page': 'Page',
+
+//         // Error Messages
+//         'productNotFound': 'Product Not Found',
+//         'productNotFoundMessage': 'Sorry, the product you are looking for does not exist or has been removed.',
+//         'backToHome': 'Back to Home',
+
+//         // Form Validation
+//         'requiredField': 'This field is required',
+//         'invalidPhone': 'Invalid phone number',
+
+//         // Order Messages
+//         'orderSuccess': 'Purchase completed successfully!',
+//         'orderNumber': 'Your order number',
+//         'orderError': 'Error saving order, please try again',
+
+//         // Cart Messages
+//         'productAlreadyInCart': 'This product is already in cart with same specifications!',
+//         'productAddedToCart': 'Product added to cart successfully!',
+
+//         // Wishlist Messages
+//         'productAddedToWishlist': 'Product added to wishlist',
+//         'productRemovedFromWishlist': 'Product removed from wishlist',
+
+//         // في كائن en:
+//         'noColors': 'No colors available',
+//         'noSizesForColor': 'No sizes available for this color',
+//         'noComments': 'No comments for this product yet.',
+//     }
+// };
+
+// export default translations;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const translations = {
+    ar: {
+        // Global
+        'siteName': 'حفيد الملك',
+        'siteNameEnglish': 'Hafid Elmalek',
+        'loading': 'جاري التحميل...',
+        'search': 'بحث',
+        'searchPlaceholder': 'ابحث عن المنتج...',
+        'addToCart': 'أضف إلى العربة',
+        'remove': 'إزالة',
+        'quantity': 'الكمية',
+        'total': 'الإجمالي',
+        'price': 'السعر',
+        'color': 'اللون',
+        'colors': 'الألوان',
+        'size': 'المقاس',
+        'sizes': 'المقاسات',
+        'description': 'الوصف',
+        'comments': 'التعليقات',
+        'home': 'الرئيسية',
+        'cart': 'العربة',
+        'wishlist': 'المفضلة',
+        'checkout': 'الدفع',
+        'categories': 'الأقسام',
+        'allProducts': 'الكل',
+        'allAccessories': 'الكل',
+        'mensSneakers': 'كوتشي رجالي',
+        'youthSneakers': 'كوتشي شبابي وبناتي',
+        'kidsSneakers': 'كوتشي اطفالي', // قسم جديد
+        'mensShoes': 'حذاء رجالي',
+        'womensShoes': 'حذاء نسائي',
+        'accessories': 'الاكسسوارات',
+        'backpacks': 'شنطة ظهر',
+        'crossBags': 'شنطة كروس',
+        'wallets': 'محفظة',
+        'bracelets': 'اسوار يد',
+        'watches': 'ساعات',
+        'shoeCleaners': 'منظف احذية',
+        'socks': 'شراب', // قسم جديد
+        'belts': 'حزام', // قسم جديد
+        'rings': 'خاتم', // قسم جديد
+        'necklaces': 'سلسلة', // قسم جديد
+        'emptyCart': 'سلة التسوق فارغة',
+        'addToCartMessage': 'أضف منتجات إلى سلة التسوق لرؤيتها هنا',
+        'emptyWishlist': 'لا توجد منتجات في قائمة المفضلات',
+        'addToWishlistMessage': 'اضغط على القلب في أي منتج لإضافته إلى المفضلات',
+        'proceedToCheckout': 'أذهب لإتمام عملية الدفع',
+        'complete': 'إتمام',
+        'productName': 'اسم المنتج',
+        'productPrice': 'السعر',
+        'notSpecified': 'غير محدد',
+        'increase': 'زيادة',
+        'decrease': 'نقصان',
+        'goToPayment': 'أذهب لإتمام عملية الدفع',
+        'name': 'الأسم',
+        'address': 'العنوان',
+        'phone': 'رقم الهاتف',
+        'whatsapp': 'رقم الواتساب',
+        'fullName': 'الأسم ثلاثي',
+        'cashOnDelivery': 'الدفع نقداً عند الاستلام',
+        'enterFullName': 'أدخل الاسم الثلاثي',
+        'enterAddress': 'أدخل العنوان الكامل',
+        'enterPhone': 'مثال: 01234567890',
+        'enterWhatsapp': 'مثال: 01234567890',
+        'completePurchase': 'اتمام عملية الشراء',
+        'orderCompleted': 'تم إتمام الشراء',
+        'goToHomePage': 'اضغط للانتقال إلى الصفحة الرئيسية',
+        'go': 'انتقال',
+        'currency': 'جنيه',
+        'addComment': 'اضافة التعليق',
+        'addCommentPlaceholder': 'اكتب تعليقك هنا...',
+        'selectColorFirst': 'اختر لون أولاً',
+        'selectSizeFirst': 'اختر مقاس أولاً',
+        'selectColorAndSize': 'اختر اللون والمقاس',
+        'selectSizeForColor': 'اختر مقاساً للون {{color}}',
+        'addToCartButton': 'أضف إلى العربة',
+        'noProductsInCategory': 'لا توجد منتجات في هذا القسم',
+        'chooseAnotherCategory': 'يرجى اختيار قسم آخر',
+        'noProductsOnPage': 'لا توجد منتجات في هذه الصفحة',
+        'goToAnotherPage': 'يرجى الانتقال إلى صفحة أخرى',
+        'noSearchResults': 'لا توجد نتائج بحث عن: "{{query}}"',
+        'tryOtherSearch': 'يرجى المحاولة بكلمات بحث أخرى',
+        'viewProduct': 'عرض المنتج',
+        'heroSection': 'قسم البطل',
+        'footerTagline': 'أحذية عالمية',
+        'footerDescription': 'شركة مصرية رائدة في توفير أفضل أنواع الأحذية العالمية والمحلية بجودة عالية وأناقة لا تضاهى. نقدم أحدث صيحات الموضة مع الحفاظ على الراحة والأصالة.',
+        'contactUs': 'تواصل معنا',
+        'followUs': 'تابعنا على وسائل التواصل الاجتماعي',
+        'allRightsReserved': 'جميع الحقوق محفوظة',
+        'paymentMethods': 'طرق الدفع المتاحة:',
+        'egyptAddress': '28 شارع الطالبية، الهرم، الجيزة، مصر',
+        'egyptPhone': '+20 123 456 7890',
+        'email': 'hafidelmalk@gmail.com',
+        'facebook': 'Facebook',
+        'instagram': 'Instagram',
+        'tiktok': 'TikTok',
+        'twitter': 'Twitter',
+        'whatsappSocial': 'WhatsApp',
+        'callUs': 'اتصل بنا',
+
+        // Invoice
+        'invoice': 'الفاتورة',
+        'product': 'المنتج',
+        'totalPrice': 'السعر الإجمالي',
+        'subtotal': 'المجموع الفرعي',
+
+        // Pagination
+        'page': 'صفحة',
+
+        // Error Messages
+        'productNotFound': 'المنتج غير موجود',
+        'productNotFoundMessage': 'عذرًا، المنتج الذي تبحث عنه غير موجود أو تم إزالته.',
+        'backToHome': 'العودة للصفحة الرئيسية',
+
+        // Form Validation
+        'requiredField': 'هذا الحقل مطلوب',
+        'invalidPhone': 'رقم الهاتف غير صحيح',
+
+        // Order Messages
+        'orderSuccess': 'تم إتمام عملية الشراء بنجاح!',
+        'orderNumber': 'رقم طلبك',
+        'orderError': 'حدث خطأ أثناء حفظ الطلب، يرجى المحاولة مرة أخرى',
+
+        // Cart Messages
+        'productAlreadyInCart': 'هذا المنتج مضاف بالفعل إلى العربة بنفس المواصفات!',
+        'productAddedToCart': 'تم إضافة المنتج إلى العربة بنجاح!',
+
+        // Wishlist Messages
+        'productAddedToWishlist': 'تم إضافة المنتج إلى المفضلة',
+        'productRemovedFromWishlist': 'تم إزالة المنتج من المفضلة',
+
+        // في كائن ar:
+        'noColors': 'لا توجد ألوان متاحة',
+        'noSizesForColor': 'لا توجد مقاسات متاحة لهذا اللون',
+        'noComments': 'لا توجد تعليقات لهذا المنتج بعد.',
+    },
+
+    en: {
+        // Global
+        'siteName': 'Hafid Elmalek',
+        'siteNameEnglish': 'Hafid Elmalek',
+        'loading': 'Loading...',
+        'search': 'Search',
+        'searchPlaceholder': 'Search for product...',
+        'addToCart': 'Add to Cart',
+        'remove': 'Remove',
+        'quantity': 'Quantity',
+        'total': 'Total',
+        'price': 'Price',
+        'color': 'Color',
+        'colors': 'Colors',
+        'size': 'Size',
+        'sizes': 'Sizes',
+        'description': 'Description',
+        'comments': 'Comments',
+        'home': 'Home',
+        'cart': 'Cart',
+        'wishlist': 'Wishlist',
+        'checkout': 'Checkout',
+        'categories': 'Categories',
+        'allProducts': 'All',
+        'allAccessories': 'All',
+        'mensSneakers': "Men's Sneakers",
+        'youthSneakers': "Youth & Women's Sneakers",
+        'kidsSneakers': "Kids' Sneakers", // New section
+        'mensShoes': "Men's Shoes",
+        'womensShoes': "Women's Shoes",
+        'accessories': 'Accessories',
+        'backpacks': 'Backpacks',
+        'crossBags': 'Cross Bags',
+        'wallets': 'Wallets',
+        'bracelets': 'Bracelets',
+        'watches': 'Watches',
+        'shoeCleaners': 'Shoe Cleaners',
+        'socks': 'Socks', // New section
+        'belts': 'Belts', // New section
+        'rings': 'Rings', // New section
+        'necklaces': 'Necklaces', // New section
+        'emptyCart': 'Your cart is empty',
+        'addToCartMessage': 'Add products to your cart to see them here',
+        'emptyWishlist': 'No products in wishlist',
+        'addToWishlistMessage': 'Click the heart on any product to add it to wishlist',
+        'proceedToCheckout': 'Proceed to Checkout',
+        'complete': 'Complete',
+        'productName': 'Product Name',
+        'productPrice': 'Price',
+        'notSpecified': 'Not Specified',
+        'increase': 'Increase',
+        'decrease': 'Decrease',
+        'goToPayment': 'Go to Complete Payment',
+        'name': 'Name',
+        'address': 'Address',
+        'phone': 'Phone Number',
+        'whatsapp': 'WhatsApp Number',
+        'fullName': 'Full Name',
+        'cashOnDelivery': 'Cash on Delivery',
+        'enterFullName': 'Enter full name',
+        'enterAddress': 'Enter complete address',
+        'enterPhone': 'Example: 01234567890',
+        'enterWhatsapp': 'Example: 01234567890',
+        'completePurchase': 'Complete Purchase',
+        'orderCompleted': 'Order Completed',
+        'goToHomePage': 'Click to go to Home Page',
+        'go': 'Go',
+        'currency': 'EGP',
+        'addComment': 'Add Comment',
+        'addCommentPlaceholder': 'Write your comment here...',
+        'selectColorFirst': 'Select color first',
+        'selectSizeFirst': 'Select size first',
+        'selectColorAndSize': 'Select Color and Size',
+        'selectSizeForColor': 'Select size for {{color}}',
+        'addToCartButton': 'Add to Cart',
+        'noProductsInCategory': 'No products in this category',
+        'chooseAnotherCategory': 'Please choose another category',
+        'noProductsOnPage': 'No products on this page',
+        'goToAnotherPage': 'Please go to another page',
+        'noSearchResults': 'No search results for: "{{query}}"',
+        'tryOtherSearch': 'Please try other search terms',
+        'viewProduct': 'View Product',
+        'heroSection': 'Hero Section',
+        'footerTagline': 'Global Shoes',
+        'footerDescription': 'An Egyptian leading company in providing the best types of global and local shoes with high quality and unparalleled elegance. We offer the latest fashion trends while maintaining comfort and authenticity.',
+        'contactUs': 'Contact Us',
+        'followUs': 'Follow us on social media',
+        'allRightsReserved': 'All rights reserved',
+        'paymentMethods': 'Payment Methods Available:',
+        'egyptAddress': '28 El-Talabeya Street, Haram, Giza, Egypt',
+        'egyptPhone': '+20 123 456 7890',
+        'email': 'hafidelmalk@gmail.com',
+        'facebook': 'Facebook',
+        'instagram': 'Instagram',
+        'tiktok': 'TikTok',
+        'twitter': 'Twitter',
+        'whatsappSocial': 'WhatsApp',
+        'callUs': 'Call Us',
+
+        // Invoice
+        'invoice': 'Invoice',
+        'product': 'Product',
+        'totalPrice': 'Total Price',
+        'subtotal': 'Subtotal',
+
+        // Pagination
+        'page': 'Page',
+
+        // Error Messages
+        'productNotFound': 'Product Not Found',
+        'productNotFoundMessage': 'Sorry, the product you are looking for does not exist or has been removed.',
+        'backToHome': 'Back to Home',
+
+        // Form Validation
+        'requiredField': 'This field is required',
+        'invalidPhone': 'Invalid phone number',
+
+        // Order Messages
+        'orderSuccess': 'Purchase completed successfully!',
+        'orderNumber': 'Your order number',
+        'orderError': 'Error saving order, please try again',
+
+        // Cart Messages
+        'productAlreadyInCart': 'This product is already in cart with same specifications!',
+        'productAddedToCart': 'Product added to cart successfully!',
+
+        // Wishlist Messages
+        'productAddedToWishlist': 'Product added to wishlist',
+        'productRemovedFromWishlist': 'Product removed from wishlist',
+
+        // في كائن en:
+        'noColors': 'No colors available',
+        'noSizesForColor': 'No sizes available for this color',
+        'noComments': 'No comments for this product yet.',
+    }
+};
+
+export default translations;

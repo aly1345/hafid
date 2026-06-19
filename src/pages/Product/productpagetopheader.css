@@ -1,0 +1,259 @@
+@import url('../../index.css');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.product-page-top-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: var(--white-text);
+    box-shadow: 0 2px 20px var(--dark-text-shadow);
+    border-bottom: 3px solid var(--main-color);
+}
+
+.product-page-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.product-page-nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    min-height: 70px;
+}
+
+.product-page-logo {
+    flex: 1;
+    min-width: 150px;
+}
+
+.logo-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo-arabic {
+    font-size: clamp(20px, 4vw, 28px);
+    color: var(--main-color);
+    margin: 0;
+    font-weight: 800;
+    font-family: 'Tajawal', 'Arial', sans-serif;
+    letter-spacing: 0;
+    line-height: 1.2;
+}
+
+.logo-english {
+    font-size: clamp(12px, 2vw, 16px);
+    color: var(--background-dark-color);
+    margin: 2px 0 0 0;
+    font-weight: 500;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.product-page-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-page-heart-icon,
+.product-page-cart-icon,
+.product-page-home-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+.product-page-heart-icon-link,
+.product-page-cart-icon-link,
+.product-page-home-icon-link {
+    color: var(--background-dark-color);
+    font-size: clamp(18px, 3vw, 24px);
+    transition: all 0.3s ease;
+    padding: 8px;
+    border-radius: 50%;
+    background: var(--light-color);
+    width: clamp(40px, 6vw, 48px);
+    height: clamp(40px, 6vw, 48px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-page-heart-icon-link:hover,
+.product-page-cart-icon-link:hover,
+.product-page-home-icon-link:hover {
+    color: var(--main-color);
+    background: rgba(180, 105, 36, 0.1);
+    transform: translateY(-2px);
+}
+
+.product-page-icons span {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: var(--main-color);
+    color: var(--white-text);
+    font-size: clamp(9px, 1.5vw, 11px);
+    width: clamp(18px, 3vw, 22px);
+    height: clamp(18px, 3vw, 22px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0 2px 5px var(--dark-text-shadow);
+}
+
+.product-page-handle-fixed {
+    width: 100%;
+    height: clamp(70px, 10vh, 100px);
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+    .product-page-container {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .product-page-nav-bar {
+        padding: 8px 0;
+        min-height: 65px;
+    }
+
+    .product-page-icons {
+        gap: 8px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product-page-nav-bar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 8px 0;
+        min-height: auto;
+    }
+
+    .product-page-logo {
+        flex: 0 0 100%;
+        text-align: center;
+        min-width: unset;
+    }
+
+    .logo-text-container {
+        align-items: center;
+    }
+
+    .product-page-icons {
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .product-page-heart-icon-link,
+    .product-page-cart-icon-link,
+    .product-page-home-icon-link {
+        width: 44px;
+        height: 44px;
+        padding: 6px;
+    }
+
+    .product-page-handle-fixed {
+        height: 90px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .product-page-container {
+        padding: 0 10px;
+    }
+
+    .product-page-nav-bar {
+        gap: 10px;
+        padding: 5px 0;
+    }
+
+    .product-page-icons {
+        gap: 15px;
+    }
+
+    .product-page-heart-icon-link,
+    .product-page-cart-icon-link,
+    .product-page-home-icon-link {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        font-size: 18px;
+    }
+
+    .product-page-handle-fixed {
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .product-page-icons {
+        gap: 12px;
+    }
+
+    .product-page-heart-icon-link,
+    .product-page-cart-icon-link,
+    .product-page-home-icon-link {
+        width: 38px;
+        height: 38px;
+        padding: 4px;
+        font-size: 16px;
+    }
+
+    .logo-arabic {
+        font-size: 22px;
+    }
+
+    .logo-english {
+        font-size: 13px;
+    }
+}
+
+/* تحسينات للشاشات العمودية الصغيرة */
+@media screen and (max-height: 600px) and (orientation: portrait) {
+    .product-page-nav-bar {
+        min-height: 60px;
+        padding: 5px 0;
+    }
+
+    .product-page-handle-fixed {
+        height: 70px;
+    }
+}
+
+/* تحسينات للشاشات الأفقية */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .product-page-nav-bar {
+        min-height: 55px;
+        padding: 3px 0;
+    }
+
+    .product-page-handle-fixed {
+        height: 60px;
+    }
+}

@@ -1,0 +1,112 @@
+/* @import url('../../index.css');
+
+
+
+.invoice {
+    display: block;
+    background-color: var(--color);
+    width: 100%;
+    padding: 10px 0 30px;
+}
+
+.invoice-table {
+    direction: rtl;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+.invoice-table table {
+    padding: 0;
+    width: 100%;
+    height: 80%;
+    color: var(--dark-text);
+    table-layout: auto;
+    font-size: 22px;
+    text-align: center;
+    border: 5px solid var(--background-dark-color);
+    border-radius: 10px;
+    border-collapse: separate;
+}
+
+.invoice-table caption {
+    font-size: 30px;
+    color: var(--white-text);
+}
+
+.invoice-table table tr,
+.invoice-table table td {
+    background-color: var(--background-color);
+}
+
+.invoice-table table th {
+    background-color: var(--main-color);
+}
+
+@media screen and (max-width:500px) {
+
+    .invoice {
+        height: 180px;
+    }
+} */
+
+
+
+
+
+
+
+
+@import url('../../index.css');
+
+.invoice {
+    display: block;
+    background-color: var(--color);
+    width: 100%;
+    padding: 10px 0 30px;
+    /* تم إزالة الارتفاع الثابت */
+    height: auto;
+}
+
+.invoice-table {
+    direction: rtl;
+    width: 80%;
+    /* ارتفاع تلقائي */
+    height: auto;
+    margin: auto;
+    overflow-x: auto;
+    /* إضافة شريط تمرير أفقي إذا كان الجدول عريضاً */
+}
+
+.invoice-table table {
+    padding: 0;
+    width: 100%;
+    /* ارتفاع تلقائي */
+    height: auto;
+    color: var(--dark-text);
+    table-layout: auto;
+    /* حجم خط مرن */
+    font-size: clamp(14px, 2vw, 22px);
+    text-align: center;
+    border: 5px solid var(--background-dark-color);
+    border-radius: 10px;
+    border-collapse: separate;
+}
+
+.invoice-table caption {
+    /* حجم خط مرن */
+    font-size: clamp(20px, 3vw, 30px);
+    color: var(--white-text);
+    margin-bottom: 10px;
+}
+
+.invoice-table table tr,
+.invoice-table table td {
+    background-color: var(--background-color);
+}
+
+.invoice-table table th {
+    background-color: var(--main-color);
+}
+
+/* إزالة استعلام الوسائط الخاص بالشاشات الصغيرة */

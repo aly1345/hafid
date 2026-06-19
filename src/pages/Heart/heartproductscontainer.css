@@ -1,0 +1,126 @@
+/* @import url('../../index.css');
+
+
+
+.heart-products-container {
+    flex: 3;
+    width: 100%;
+    margin: 5% 0 20px;
+}
+
+.no-favorites-message {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--background-dark-color);
+}
+
+.no-favorites-message h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--dark-text);
+}
+
+.no-favorites-message p {
+    font-size: 16px;
+    color: var(--background-dark-color);
+}
+
+@media screen and (min-width:501px) and (max-width:1300px) {
+    .heart-products-container {
+        margin: 5% 0 10px;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    .heart-products-container {
+        margin: 5% 0 8px;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('../../index.css');
+
+.heart-products-container {
+    flex: 3;
+    width: 100%;
+    margin: 5% 0 20px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.no-favorites-message {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--background-dark-color);
+    background: var(--light-color);
+    border-radius: 30px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.no-favorites-message h3 {
+    font-size: clamp(20px, 3vw, 28px);
+    margin-bottom: 15px;
+    color: var(--dark-text);
+}
+
+.no-favorites-message p {
+    font-size: clamp(14px, 2vw, 18px);
+    color: var(--background-dark-color);
+}
+
+/* تحسينات للشاشات المتوسطة */
+@media screen and (min-width: 501px) and (max-width: 1300px) {
+    .heart-products-container {
+        margin: 5% 0 15px;
+        padding: 0 12px;
+    }
+
+    .no-favorites-message {
+        padding: 50px 15px;
+        border-radius: 25px;
+    }
+}
+
+/* تحسينات للشاشات الصغيرة */
+@media screen and (max-width: 500px) {
+    .heart-products-container {
+        margin: 5% 0 10px;
+        padding: 0 10px;
+    }
+
+    .no-favorites-message {
+        padding: 40px 10px;
+        border-radius: 20px;
+    }
+}
+
+/* تحسينات للشاشات الصغيرة جداً */
+@media screen and (max-width: 350px) {
+    .heart-products-container {
+        padding: 0 8px;
+    }
+
+    .no-favorites-message {
+        padding: 30px 8px;
+    }
+}

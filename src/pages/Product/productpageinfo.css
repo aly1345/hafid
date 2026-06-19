@@ -1,0 +1,656 @@
+@import url('../../index.css');
+
+
+
+@keyframes moveFromRightToLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100% / 2));
+    }
+}
+
+@keyframes moveFromLeftToRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(100% / 2));
+    }
+}
+
+.product-page-imgs-list.animate-rtl {
+    animation: moveFromRightToLeft 60s infinite linear;
+}
+
+/* 
+   هذا الكلاس يضيف حركة من اليسار لليمين (للغة الإنجليزية)
+   عندما يكون class="animate-ltr"
+*/
+.product-page-imgs-list.animate-ltr {
+    animation: moveFromLeftToRight 60s infinite linear;
+}
+
+/* 
+   هذا الكلاس يوقف الأنيميشن مؤقتاً
+   عند تمرير الماوس فوق الصور
+*/
+.product-page-imgs-list:hover {
+    animation-play-state: paused;
+}
+
+/* --------------------------------------------------------- */
+/* الجزء 3: التصميم الأساسي - لا تغيير */
+/* --------------------------------------------------------- */
+
+.container-2 {
+    width: 80%;
+    margin: 0 auto;
+    background-color: var(--background-dark-color);
+    border-radius: 50px;
+    padding-bottom: 30px;
+}
+
+.product-page-info {
+    margin: 30px 0 0 0;
+    width: 100%;
+    height: 1100px;
+    overflow: hidden;
+    z-index: -1;
+    border-radius: 50px 50px 0 0;
+}
+
+.product-page-imgs {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-page-imgs-list {
+    width: max-content;
+    height: 100%;
+    display: flex;
+    position: relative;
+    white-space: nowrap;
+    z-index: 0;
+    /* الأنيميشن سيضاف من خلال الكلاس */
+}
+
+.product-page-img {
+    width: 80vw;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.product-page-imgs img {
+    width: 100%;
+    height: 100%;
+}
+
+/* --------------------------------------------------------- */
+/* الجزء 4: التأثيرات الجانبية (التدرج) حسب اتجاه اللغة */
+/* --------------------------------------------------------- */
+
+/* 
+   للغة العربية (rtl): التأثير من كلا الجانبين
+*/
+[dir="rtl"] .product-page-imgs::before {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    content: "";
+    width: 15%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(180, 105, 36, 255));
+    z-index: 1;
+}
+
+[dir="rtl"] .product-page-imgs::after {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    content: "";
+    width: 15%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(180, 105, 36, 255));
+    z-index: 1;
+}
+
+/* 
+   للغة الإنجليزية (ltr): التأثير معكوس
+*/
+[dir="ltr"] .product-page-imgs::before {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    content: "";
+    width: 15%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(180, 105, 36, 255));
+    z-index: 1;
+}
+
+[dir="ltr"] .product-page-imgs::after {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    content: "";
+    width: 15%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(180, 105, 36, 255));
+    z-index: 1;
+}
+
+/* --------------------------------------------------------- */
+/* الجزء 5: بقية التصميم - لا تغيير */
+/* --------------------------------------------------------- */
+
+.breaking-line {
+    width: 100%;
+    height: 10px;
+    background-color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.product-page-des {
+    width: 100%;
+    height: 50%;
+}
+
+.product-page-des-text {
+    width: 100%;
+    height: 40%;
+    color: var(--white-text);
+}
+
+.product-page-name-price {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 30%;
+    font-size: 30px;
+    padding: 10px 0 10px;
+}
+
+[dir="rtl"] .product-page-name-price {
+    flex-direction: row-reverse;
+}
+
+[dir="ltr"] .product-page-name-price {
+    flex-direction: row;
+}
+
+.product-page-description {
+    width: 100%;
+    height: 70%;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+[dir="rtl"] .product-page-description {
+    direction: rtl;
+}
+
+[dir="ltr"] .product-page-description {
+    direction: ltr;
+}
+
+.product-page-color-size {
+    width: 100%;
+    height: 250px;
+}
+
+[dir="rtl"] .product-page-color-size {
+    direction: rtl;
+}
+
+[dir="ltr"] .product-page-color-size {
+    direction: ltr;
+}
+
+.product-page-color,
+.product-page-size {
+    margin: 10px 0;
+    width: 100%;
+    height: 50%;
+}
+
+.product-page-color p,
+.product-page-size p {
+    display: block;
+    font-size: 26px;
+    background-color: var(--main-color);
+    color: var(--white-text);
+    width: 100%;
+    text-align: center;
+}
+
+.product-page-color div,
+.product-page-size div {
+    display: inline-block;
+    color: var(--white-text);
+}
+
+.product-page-color div {
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    margin: 10px 10px;
+}
+
+.product-page-size div {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    margin: 5px 5px 0;
+}
+
+.color-option input[type="radio"],
+.size-option input[type="radio"] {
+    display: none;
+}
+
+.color-option,
+.size-option {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.color-label,
+.size-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.color-option input[type="radio"]:checked+.color-label {
+    border: 3px solid var(--main-color);
+    box-shadow: 0 0 10px var(--dark-text-shadow);
+}
+
+.size-option input[type="radio"]:checked+.size-label {
+    border: 3px solid var(--main-color);
+    box-shadow: 0 0 10px var(--dark-text-shadow);
+}
+
+.color-label:hover,
+.size-label:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+@media screen and (min-width:801px) and (max-width:1300px) {
+    .container-2 {
+        border-radius: 30px;
+    }
+
+    .product-page-info {
+        border-radius: 30px 30px 0 0;
+        height: 900px;
+    }
+
+    .product-page-imgs {
+        height: 40%;
+    }
+
+    .product-page-des {
+        width: 100%;
+        height: 60%;
+    }
+
+    .product-page-des-text {
+        height: 40%;
+    }
+
+    .product-page-name-price {
+        height: 20%;
+        font-size: 26px;
+        padding: 8px 0;
+    }
+
+    .product-page-description {
+        height: 80%;
+        font-size: 17px;
+        padding: 5px 10px;
+    }
+
+    .product-page-color-size {
+        height: 200px;
+    }
+
+    .product-page-color,
+    .product-page-size {
+        margin: 10px 0;
+        width: 100%;
+        height: 40%;
+    }
+
+    .product-page-color p,
+    .product-page-size p {
+        font-size: 20px;
+    }
+
+    .product-page-color div {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .product-page-size div {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width:501px) and (max-width:800px) {
+    .container-2 {
+        border-radius: 20px;
+    }
+
+    .product-page-info {
+        border-radius: 20px 20px 0 0;
+        height: 950px;
+    }
+
+    .product-page-imgs {
+        height: 50%;
+    }
+
+    .product-page-des {
+        width: 100%;
+        height: 50%;
+    }
+
+    .product-page-des-text {
+        height: 40%;
+    }
+
+    .product-page-name-price {
+        height: 15%;
+        font-size: 22px;
+        padding: 8px 0 10px;
+    }
+
+    .product-page-description {
+        height: 80%;
+        font-size: 12px;
+        padding: 12px 0 5px;
+    }
+
+    .product-page-color-size {
+        height: 200px;
+    }
+
+    .product-page-color,
+    .product-page-size {
+        margin: 10px 0;
+        width: 100%;
+        height: 45%;
+    }
+
+    .product-page-color div {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .product-page-info {
+        height: 1000px;
+    }
+
+    .product-page-imgs {
+        height: 35%;
+    }
+
+    .product-page-des {
+        width: 100%;
+        height: 65%;
+    }
+
+    .product-page-des-text {
+        height: 40%;
+    }
+
+    .product-page-name-price {
+        height: 10%;
+        font-size: 16px;
+        padding: 2px 0;
+    }
+
+    .product-page-description {
+        height: 88%;
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .product-page-color-size {
+        height: 350px;
+    }
+
+    .product-page-color {
+        height: 38%;
+    }
+
+    .product-page-size {
+        margin: 5px 0;
+        width: 100%;
+        height: 62%;
+    }
+
+    .product-page-color div {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+}
+
+.product-page-add-product {
+    width: 100%;
+    height: 120px;
+    background-color: var(--main-color);
+}
+
+.product-page-add-product-button {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0 40px;
+}
+
+.product-page-add-product button {
+    font-size: 25px;
+    display: block;
+    width: 240px;
+    height: 60px;
+    padding: 10px;
+    margin: auto;
+    outline: 0;
+    border: 2px dashed var(--main-color);
+    cursor: pointer;
+    background-color: var(--background-dark-color);
+    color: var(--white-text);
+    border-radius: 10px;
+    box-shadow:
+        3px 7px 3px 0 var(--color),
+        0 9px 12px var(--dark-text-shadow);
+}
+
+.product-page-add-product button:active {
+    transform: translateY(3px);
+    box-shadow:
+        0 0 0 var(--color),
+        0 0 0 var(--dark-text-shadow);
+}
+
+.product-page-add-product button.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.product-page-add-product button.enabled {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.product-page-comments {
+    width: 100%;
+}
+
+.product-page-comments-title {
+    width: 100%;
+    height: 70px;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0 10px;
+    color: var(--white-text);
+    border: 8px dotted var(--color);
+}
+
+.product-page-comments-container {
+    width: 90%;
+    margin: auto;
+}
+
+[dir="rtl"] .product-page-comments-container {
+    direction: rtl;
+}
+
+[dir="ltr"] .product-page-comments-container {
+    direction: ltr;
+}
+
+.product-page-comment {
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    background-color: var(--background-color);
+    margin: 25px 10px;
+    border-radius: 20px;
+    border: 8px solid var(--color);
+}
+
+.product-page-comment-id {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0 0;
+    height: 30px;
+    font-size: 12px;
+    color: var(--dark-text);
+}
+
+[dir="rtl"] .product-page-comment-id {
+    padding-left: 50px;
+    direction: ltr;
+}
+
+[dir="ltr"] .product-page-comment-id {
+    padding-right: 50px;
+    direction: ltr;
+}
+
+.product-page-comment-text {
+    display: inline-block;
+    width: 100%;
+    padding: 0 20px 10px;
+    font-size: 20px;
+}
+
+[dir="rtl"] .product-page-comment-text {
+    padding-right: 20px;
+}
+
+[dir="ltr"] .product-page-comment-text {
+    padding-left: 20px;
+}
+
+@media screen and (min-width:501px) and (max-width:900px) {
+    .product-page-comments-container {
+        width: 94%;
+    }
+
+    .product-page-comment {
+        height: 100px;
+        margin: 0 0 10px 0;
+    }
+
+    .product-page-comment-text {
+        padding: 0 10px 8px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .product-page-comments-container {
+        width: 96%;
+    }
+
+    .product-page-comment {
+        height: 100px;
+        margin: 0 0 10px 0;
+    }
+
+    .product-page-comment-text {
+        font-size: 16px;
+    }
+}
+
+.control-section {
+    width: 100%;
+}
+
+.control-section-buttons {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    min-height: 100px;
+}
+
+.control-section-button {
+    display: inline-block;
+    margin: 0.5%;
+    width: 5.65%;
+    min-width: 40px;
+    height: 40%;
+}
+
+.control-section-button .button- {
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.control-section-button .button-selected {
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    color: var(--white-text);
+    border-radius: 8px;
+}
+
+.without-button {
+    height: 40%;
+}
+
+.without-button p {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    color: var(--white-text);
+    font-size: 20px;
+    text-align: center;
+}

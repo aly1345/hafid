@@ -1,0 +1,373 @@
+/* -------------------------------------------------------------------------------------------------------------- */
+/*---------------------------------------- the first list with my opinion ----------------------------------------*/
+/* -------------------------------------------------------------------------------------------------------------- */
+
+
+/* :root {
+  --main-color: #b46924;
+  --color: #b1886a;
+  --second-color: #c0b08e;
+  --light-color: #fff7f1;
+  --dark-color: #343333;
+  --background-color: #dfe0df;
+  --background-sec-color: #f5efdc;
+  --background-dark-color: #252525;
+  --white-text: #efefef;
+  --dark-text: #131313;
+  --dark-text-shadow: rgba(19, 19, 19, 0.3);
+
+
+  --facebook: #1877F2;
+  --instagram: #E1306C;
+  --tiktok: #000000;
+  --twitter: #1DA1F2;
+  --whatsapp: #25D366;
+  --phone: #34A853;
+} */
+
+/* ----------------------------------------------------------------------------------------------------- */
+/*---------------------------------------- the white & blak list ----------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------- */
+
+
+/* :root {
+  --main-color: #2d2d2d;
+  --color: #5a5a5a;
+  --second-color: #878787;
+  --light-color: #f8f8f8;
+  --dark-color: #1a1a1a;
+  --background-color: #f0f0f0;
+  --background-sec-color: #e5e5e5;
+  --background-dark-color: #0a0a0a;
+  --white-text: #ffffff;
+  --dark-text: #141414;
+  --dark-text-shadow: rgba(20, 20, 20, 0.2);
+
+
+  --facebook: #1877F2;
+  --instagram: #E1306C;
+  --tiktok: #000000;
+  --twitter: #1DA1F2;
+  --whatsapp: #25D366;
+  --phone: #34A853;
+} */
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+/*---------------------------------------- the White & Beige list ---------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------- */
+
+
+
+/* :root {
+  --main-color: #d4b48c;
+  --color: #e6d5b8;
+  --second-color: #f3e9d2;
+  --light-color: #fff9f0;
+  --dark-color: #8b7356;
+  --background-color: #faf3e0;
+  --background-sec-color: #fff5e6;
+  --background-dark-color: #5e4b3c;
+  --white-text: #ffffff;
+  --dark-text: #3e2e24;
+  --dark-text-shadow: rgba(94, 75, 60, 0.25);
+
+
+
+  --facebook: #1877F2;
+  --instagram: #E1306C;
+  --tiktok: #000000;
+  --twitter: #1DA1F2;
+  --whatsapp: #25D366;
+  --phone: #34A853;
+} */
+
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+/*---------------------------------------- the White & Off-White list ---------------------------------------*/
+/* --------------------------------------------------------------------------------------------------------- */
+
+
+/* :root {
+  --main-color: #e0d7c6;
+  --color: #ece3d5;
+  --second-color: #f5efe8;
+  --light-color: #fdf9f5;
+  --dark-color: #b7aa99;
+  --background-color: #f8f4ef;
+  --background-sec-color: #faf7f2;
+  --background-dark-color: #9a8c7a;
+  --white-text: #ffffff;
+  --dark-text: #4a4137;
+  --dark-text-shadow: rgba(154, 140, 122, 0.25);
+
+
+
+  --facebook: #1877F2;
+  --instagram: #E1306C;
+  --tiktok: #000000;
+  --twitter: #1DA1F2;
+  --whatsapp: #25D366;
+  --phone: #34A853;
+
+} */
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+/*---------------------------------------- the Black & Beige list ---------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------- */
+
+
+/* :root {
+  --main-color: #3a322a;
+  --color: #6b5843;
+  --second-color: #a08c78;
+  --light-color: #f2e6da;
+  --dark-color: #1e1b18;
+  --background-color: #e5d6c8;
+  --background-sec-color: #d4c0ae;
+  --background-dark-color: #0f0d0b;
+  --white-text: #fef7f0;
+  --dark-text: #221e1b;
+  --dark-text-shadow: rgba(30, 27, 24, 0.35);
+
+
+
+
+  --facebook: #1877F2;
+  --instagram: #E1306C;
+  --tiktok: #000000;
+  --twitter: #1DA1F2;
+  --whatsapp: #25D366;
+  --phone: #34A853;
+} */
+
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------- */
+
+:root {
+  --main-color: #b45f2a;
+  --color: #c17f5c;
+  --second-color: #d9b8a4;
+  --light-color: #fdf1e9;
+  --dark-color: #2c3e4e;
+  --background-color: #f4f1eb;
+  --background-sec-color: #f9f2ea;
+  --background-dark-color: #1e2b36;
+  --white-text: #ffffff;
+  --dark-text: #1e2b36;
+  --dark-text-shadow: rgba(30, 43, 54, 0.15);
+
+
+
+
+
+  --facebook: #1877F2;
+  --instagram: #E1306C;
+  --tiktok: #000000;
+  --twitter: #1DA1F2;
+  --whatsapp: #25D366;
+  --phone: #34A853;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------- */
+
+
+
+
+body {
+  background-color: var(--background-sec-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  display: block;
+}
+
+/* جعل السكرول خارج تدفق الصفحة */
+::-webkit-scrollbar {
+  width: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--second-color);
+  border-radius: 10px;
+  margin: 5px 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color);
+  border-radius: 10px;
+  border: 2px dashed var(--dark-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--light-color);
+}
+
+::-webkit-scrollbar-button {
+  height: 0px;
+  border-radius: 10px;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.custom-scrollbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 15px;
+  height: 100%;
+  background: var(--second-color);
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.custom-scrollbar-thumb {
+  position: absolute;
+  width: 100%;
+  background: var(--color);
+  border-radius: 10px;
+  border: 2px dashed var(--dark-color);
+  cursor: pointer;
+}
+
+.custom-scrollbar-thumb:hover {
+  background: var(--light-color);
+}
+
+/* Language Support Styles */
+[lang="ar"] {
+  font-family: 'Tajawal', 'Arial', sans-serif;
+}
+
+[lang="en"] {
+  font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="ltr"] {
+  text-align: left;
+}
+
+/* Smooth language transition */
+* {
+  transition: font-family 0.3s ease;
+}
+
+/* تحسينات الترجمة */
+.language-switcher-container {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+/* تنسيق النصوص للغة العربية */
+[lang="ar"] .rtl-text {
+  text-align: right;
+  direction: rtl;
+}
+
+[lang="ar"] .ltr-text {
+  text-align: left;
+  direction: ltr;
+}
+
+/* تنسيق النصوص للغة الإنجليزية */
+[lang="en"] .rtl-text {
+  text-align: left;
+  direction: ltr;
+}
+
+[lang="en"] .ltr-text {
+  text-align: left;
+  direction: ltr;
+}
+
+/* تنسيق الأزرار حسب اللغة */
+[lang="ar"] button {
+  font-family: 'Tajawal', sans-serif;
+}
+
+[lang="en"] button {
+  font-family: 'Arial', sans-serif;
+}
+
+/* تنسيق حقول الإدخال */
+[lang="ar"] input {
+  text-align: right;
+}
+
+[lang="en"] input {
+  text-align: left;
+}
+
+/* تحسينات الترجمة للجداول */
+[lang="ar"] table {
+  direction: rtl;
+}
+
+[lang="en"] table {
+  direction: ltr;
+}
+
+/* تحسينات الترجمة للقوائم */
+[lang="ar"] ul,
+[lang="ar"] ol {
+  padding-right: 20px;
+}
+
+[lang="en"] ul,
+[lang="en"] ol {
+  padding-left: 20px;
+}
+
+/* تحسينات للروابط حسب اللغة */
+[lang="ar"] a {
+  text-align: right;
+}
+
+[lang="en"] a {
+  text-align: left;
+}

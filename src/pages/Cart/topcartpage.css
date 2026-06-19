@@ -1,0 +1,361 @@
+/* @import url('../../index.css');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cart-page-top-header {
+    width: 100%;
+    height: 130px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: var(--white-text);
+    box-shadow: 0 2px 20px var(--dark-text-shadow);
+    border-bottom: 10px var(--color) solid;
+}
+
+.cart-page-nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    height: auto;
+    min-height: 80px;
+}
+
+.cart-page-logo {
+    flex: 0 0 auto;
+    min-width: 200px;
+}
+
+.logo-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo-arabic {
+    font-size: 28px;
+    color: var(--main-color);
+    margin: 0;
+    font-weight: 800;
+    font-family: 'Tajawal', 'Arial', sans-serif;
+    letter-spacing: 0;
+    line-height: 1.2;
+}
+
+.logo-english {
+    font-size: 16px;
+    color: var(--background-dark-color);
+    margin: 2px 0 0 0;
+    font-weight: 500;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.cart-page-icons {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.heart-cart-page-icon,
+.home-cart-page-icon {
+
+    position: relative;
+    cursor: pointer;
+}
+
+.heart-cart-page-icon-link,
+.home-cart-page-icon-link {
+    color: var(--background-dark-color);
+    font-size: 24px;
+    transition: all 0.3s ease;
+    padding: 8px;
+    border-radius: 50%;
+    background: var(--light-color);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heart-page-home-icon-link:hover,
+.heart-page-cart-icon-link:hover {
+    color: var(--main-color);
+    background: rgba(180, 105, 36, 0.1);
+    transform: translateY(-2px);
+}
+
+.cart-page-icons span {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: var(--main-color);
+    color: var(--white-text);
+    font-size: 11px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0 2px 5px var(--dark-text-shadow);
+}
+
+.handle-fixed {
+    width: 100%;
+}
+
+@media screen and (min-width:501px) and (max-width:1300px) {
+
+    .cart-page-logo {
+        width: 20%;
+        margin: 0 10px;
+    }
+
+    .cart-page-nav-bar-center {
+        width: 60%;
+    }
+
+    .cart-page-nav-bar-center br {
+        display: inline;
+    }
+
+    .cart-page-nav-bar-center span {
+        display: none;
+    }
+
+    .cart-page-nav-bar-center p {
+        font-size: 28px;
+        margin-top: 15px;
+        letter-spacing: 1px;
+    }
+
+    .cart-page-icons {
+        width: 20%;
+    }
+
+    .heart-cart-page-icon,
+    .home-cart-page-icon {
+        margin: 25px 15px;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .cart-page-logo {
+        width: 10%;
+        height: 50px;
+        min-height: 50px;
+        margin: 25px 5px;
+    }
+
+    .cart-page-logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .cart-page-nav-bar-center {
+        width: 70%;
+    }
+
+    .cart-page-nav-bar-center br {
+        display: inline;
+    }
+
+    .cart-page-nav-bar-center span {
+        display: none;
+    }
+
+    .cart-page-nav-bar-center p {
+        font-size: 15px;
+        letter-spacing: 0px;
+    }
+
+    .cart-page-icons {
+        width: 20%;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+
+    .heart-cart-page-icon,
+    .home-cart-page-icon {
+        margin: 25px 15px;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('../../index.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cart-page-top-header {
+    width: 100%;
+    /* ارتفاع مرن */
+    height: auto;
+    min-height: 100px;
+    /* تقليل الحد الأدنى قليلاً */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: var(--white-text);
+    box-shadow: 0 2px 20px var(--dark-text-shadow);
+    border-bottom: 10px var(--color) solid;
+    display: flex;
+    align-items: center;
+}
+
+.cart-page-nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    height: auto;
+    min-height: 80px;
+    gap: 15px;
+    /* إضافة فجوة بين العناصر */
+    flex-wrap: wrap;
+    /* يسمح للعناصر بالنزول للأسفل إذا لزم الأمر */
+}
+
+.cart-page-logo {
+    flex: 1 1 auto;
+    min-width: 150px;
+}
+
+.logo-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo-arabic {
+    /* حجم خط مرن */
+    font-size: clamp(20px, 4vw, 28px);
+    color: var(--main-color);
+    margin: 0;
+    font-weight: 800;
+    font-family: 'Tajawal', 'Arial', sans-serif;
+    letter-spacing: 0;
+    line-height: 1.2;
+}
+
+.logo-english {
+    /* حجم خط مرن */
+    font-size: clamp(10px, 2vw, 16px);
+    color: var(--background-dark-color);
+    margin: 2px 0 0 0;
+    font-weight: 500;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.cart-page-icons {
+    flex: 0 1 auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* تقليل الفجوة قليلاً */
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.heart-cart-page-icon,
+.home-cart-page-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+.heart-cart-page-icon-link,
+.home-cart-page-icon-link {
+    color: var(--background-dark-color);
+    /* حجم أيقونة مرن */
+    font-size: clamp(20px, 4vw, 24px);
+    transition: all 0.3s ease;
+    padding: 8px;
+    border-radius: 50%;
+    background: var(--light-color);
+    /* حجم الحاوية مربع ومرن */
+    width: clamp(40px, 8vw, 48px);
+    height: clamp(40px, 8vw, 48px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heart-page-home-icon-link:hover,
+.heart-page-cart-icon-link:hover {
+    color: var(--main-color);
+    background: rgba(180, 105, 36, 0.1);
+    transform: translateY(-2px);
+}
+
+.cart-page-icons span {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: var(--main-color);
+    color: var(--white-text);
+    /* حجم دائري مرن */
+    font-size: clamp(9px, 2vw, 11px);
+    width: clamp(18px, 4vw, 22px);
+    height: clamp(18px, 4vw, 22px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0 2px 5px var(--dark-text-shadow);
+}
+
+.handle-fixed {
+    width: 100%;
+    /* ارتفاع يعادل ارتفاع الهيدر الجديد */
+    height: auto;
+    min-height: 100px;
+    /* يجب أن يكون مطابقاً لـ min-height في .cart-page-top-header */
+}
+
+/* إزالة جميع استعلامات الوسائط القديمة */

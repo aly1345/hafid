@@ -1,7 +1,6 @@
 import "./heartproduct.css";
 import { FaRegHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
-// التعديل:
 import { useTranslation } from '../../hooks/useTranslation';
 
 export default function Heartproduct({ data, wishlist, setWishlist }) {

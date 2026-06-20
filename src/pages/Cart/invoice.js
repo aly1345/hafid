@@ -1,5 +1,4 @@
 import "./invoice.css";
-// التعديل:
 import { useTranslation } from '../../hooks/useTranslation';
 
 export default function Invoice({ cartlist, setcartlist }) {

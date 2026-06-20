@@ -28,22 +28,6 @@ export default function Homeproductsshow({
         );
     };
 
-    // const getProductsByCollection = (collection) => {
-    //     let filteredProducts = [];
-
-    //     if (collection === "btn-1") {
-    //         filteredProducts = productsdata;
-    //     } else if (collection !== "btn-1" && collection !== "btn-6" && collection[5] !== "-") {
-    //         filteredProducts = productsdata.filter(product => product.collection === collection);
-    //     } else if (collection === "btn-6-0" || collection === "btn-6") {
-    //         filteredProducts = productsdata.filter(product => product.collection[4] === "6");
-    //     } else if (collection[5] === "-" && collection !== "btn-6-0") {
-    //         filteredProducts = productsdata.filter(product => product.collection === collection);
-    //     }
-
-    //     return filteredProducts;
-    // };
-
 
     const getProductsByCollection = (collection) => {
         let filteredProducts = [];
@@ -51,33 +35,26 @@ export default function Homeproductsshow({
         if (collection === "btn-1") {
             filteredProducts = productsdata;
         }
-        // كوتشي رجالي
         else if (collection === "btn-2") {
             filteredProducts = productsdata.filter(product => product.collection === "btn-2");
         }
-        // كوتشي شبابي وبناتي
         else if (collection === "btn-3") {
             filteredProducts = productsdata.filter(product => product.collection === "btn-3");
         }
-        // حذاء رجالي
         else if (collection === "btn-4") {
             filteredProducts = productsdata.filter(product => product.collection === "btn-4");
         }
-        // حذاء نسائي
         else if (collection === "btn-5") {
             filteredProducts = productsdata.filter(product => product.collection === "btn-5");
         }
-        // كوتشي اطفالي (قسم رئيسي جديد)
         else if (collection === "btn-6") {
             filteredProducts = productsdata.filter(product => product.collection === "btn-6");
         }
-        // جميع الاكسسوارات (btn-7-0)
         else if (collection === "btn-7-0") {
             filteredProducts = productsdata.filter(product =>
                 product.collection && product.collection.startsWith('btn-7-')
             );
         }
-        // أقسام الاكسسوارات الفرعية
         else if (collection.startsWith('btn-7-')) {
             filteredProducts = productsdata.filter(product => product.collection === collection);
         }

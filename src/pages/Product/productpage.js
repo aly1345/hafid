@@ -1,37 +1,17 @@
-// import "./productpage.css";
-// import Productpagetopheader from "./productpagetopheader";
-// import Productpageinfo from "./productpageinfo";
-
-
-
-// export default function Productpage() {
-//     return (
-//         <div className="product-page">
-//             <Productpagetopheader />
-//             <Productpageinfo />
-//         </div>
-//     );
-// }
-
-
-
-
 import "./productpage.css";
 import Productpagetopheader from "./productpagetopheader";
 import Productpageinfo from "./productpageinfo";
 import { useParams } from "react-router-dom";
-import productsdata from "../../productsdata"; // تأكد من المسار الصحيح
+import productsdata from "../../productsdata";
 import { useState, useEffect } from "react";
 
 export default function Productpage({ wishlist, setWishlist, cartlist, setcartlist }) {
-    // الحصول على الـ id من الرابط
     const { id } = useParams();
     const [product, setProduct] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        // البحث عن المنتج بناءً على الـ id
         const foundProduct = productsdata.find(item => item.id.toString() === id);
 
         if (foundProduct) {
@@ -86,7 +66,6 @@ export default function Productpage({ wishlist, setWishlist, cartlist, setcartli
                 cartlist={cartlist}
                 setcartlist={setcartlist}
             />
-            {/* تمرير بيانات المنتج إلى Productpageinfo */}
             <Productpageinfo
                 product={product}
                 cartlist={cartlist}

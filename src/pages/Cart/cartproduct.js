@@ -1,6 +1,5 @@
 import "./cartproduct.css";
 import { Link } from "react-router-dom";
-// التعديل:
 import { useTranslation } from '../../hooks/useTranslation';
 
 export default function Cartproduct({ product, quantity, onIncrease, onDecrease, onRemove }) {

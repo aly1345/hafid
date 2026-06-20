@@ -1,5 +1,4 @@
 import "./Herosection.css";
-// التعديل:
 import { useTranslation } from '../../../hooks/useTranslation';
 
 export default function Herosection() {

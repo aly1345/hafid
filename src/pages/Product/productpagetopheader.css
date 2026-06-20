@@ -127,7 +127,6 @@ body {
     height: clamp(70px, 10vh, 100px);
 }
 
-/* Media Queries */
 @media screen and (max-width: 1200px) {
     .product-page-container {
         padding: 0 15px;
@@ -234,7 +233,6 @@ body {
     }
 }
 
-/* تحسينات للشاشات العمودية الصغيرة */
 @media screen and (max-height: 600px) and (orientation: portrait) {
     .product-page-nav-bar {
         min-height: 60px;
@@ -246,7 +244,6 @@ body {
     }
 }
 
-/* تحسينات للشاشات الأفقية */
 @media screen and (max-height: 500px) and (orientation: landscape) {
     .product-page-nav-bar {
         min-height: 55px;

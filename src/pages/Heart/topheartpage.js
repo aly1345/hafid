@@ -2,7 +2,6 @@ import './topheartpage.css';
 import { AiFillHome } from "react-icons/ai";
 import { FaCartShopping } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
-// التعديل:
 import LanguageSwitcher from '../../components/LanguageSwitcher/LanguageSwitcher';
 import { useTranslation } from '../../hooks/useTranslation';
 

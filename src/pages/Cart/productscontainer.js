@@ -38,7 +38,6 @@ export default function Productscontainer({ cartlist, setcartlist }) {
         }
     }, [cartlist]);
 
-    // دالة لزيادة الكمية - تحديث cartlist مباشرة
     const increaseQuantity = (cartItemId) => {
         setcartlist(prevCart =>
             prevCart.map(item =>
@@ -52,7 +51,6 @@ export default function Productscontainer({ cartlist, setcartlist }) {
         );
     };
 
-    // دالة لتقليل الكمية - تحديث cartlist مباشرة
     const decreaseQuantity = (cartItemId) => {
         setcartlist(prevCart => {
             const updatedCart = prevCart.map(item => {
@@ -61,7 +59,7 @@ export default function Productscontainer({ cartlist, setcartlist }) {
                     if (newQuantity > 0) {
                         return { ...item, quantity: newQuantity };
                     }
-                    return null; // تم إزالته
+                    return null;
                 }
                 return item;
             }).filter(item => item !== null);
@@ -70,14 +68,12 @@ export default function Productscontainer({ cartlist, setcartlist }) {
         });
     };
 
-    // دالة لحذف المنتج من العربة
     const removeFromCart = (cartItemId) => {
         setcartlist(prevCart =>
             prevCart.filter(item => item.uniqueId !== cartItemId)
         );
     };
 
-    // دالة للحصول على كمية عنصر محدد من cartlist
     const getItemQuantity = (cartItemId) => {
         const item = cartlist.find(item => item.uniqueId === cartItemId);
         return item ? (item.quantity || 1) : 1;

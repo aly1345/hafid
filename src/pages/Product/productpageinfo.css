@@ -26,25 +26,13 @@
     animation: moveFromRightToLeft 60s infinite linear;
 }
 
-/* 
-   هذا الكلاس يضيف حركة من اليسار لليمين (للغة الإنجليزية)
-   عندما يكون class="animate-ltr"
-*/
 .product-page-imgs-list.animate-ltr {
     animation: moveFromLeftToRight 60s infinite linear;
 }
 
-/* 
-   هذا الكلاس يوقف الأنيميشن مؤقتاً
-   عند تمرير الماوس فوق الصور
-*/
 .product-page-imgs-list:hover {
     animation-play-state: paused;
 }
-
-/* --------------------------------------------------------- */
-/* الجزء 3: التصميم الأساسي - لا تغيير */
-/* --------------------------------------------------------- */
 
 .container-2 {
     width: 80%;
@@ -78,7 +66,6 @@
     position: relative;
     white-space: nowrap;
     z-index: 0;
-    /* الأنيميشن سيضاف من خلال الكلاس */
 }
 
 .product-page-img {
@@ -92,13 +79,6 @@
     height: 100%;
 }
 
-/* --------------------------------------------------------- */
-/* الجزء 4: التأثيرات الجانبية (التدرج) حسب اتجاه اللغة */
-/* --------------------------------------------------------- */
-
-/* 
-   للغة العربية (rtl): التأثير من كلا الجانبين
-*/
 [dir="rtl"] .product-page-imgs::before {
     position: absolute;
     top: 0px;
@@ -121,9 +101,6 @@
     z-index: 1;
 }
 
-/* 
-   للغة الإنجليزية (ltr): التأثير معكوس
-*/
 [dir="ltr"] .product-page-imgs::before {
     position: absolute;
     top: 0px;
@@ -145,10 +122,6 @@
     background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(180, 105, 36, 255));
     z-index: 1;
 }
-
-/* --------------------------------------------------------- */
-/* الجزء 5: بقية التصميم - لا تغيير */
-/* --------------------------------------------------------- */
 
 .breaking-line {
     width: 100%;

@@ -1,7 +1,3 @@
-
-
-// Check if cart and heart are in local storage
-
 export default function handle() {
 
 

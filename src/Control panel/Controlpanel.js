@@ -2,14 +2,11 @@ import React, { useState, useCallback, memo, useEffect, useMemo } from 'react';
 import productsdata from '../productsdata';
 import './Controlpanel.css';
 
-// ============================================
-// 0. مكون صورة مع زر الحذف
-// ============================================
+
 const ImageWithDelete = memo(({ file, index, onRemove, isEditMode = false }) => {
     const isUrl = typeof file === 'string';
     const imageUrl = isUrl ? file : URL.createObjectURL(file);
 
-    // تنظيف الكائنات المؤقتة عند فك التثبيت
     useEffect(() => {
         return () => {
             if (!isUrl && imageUrl.startsWith('blob:')) {
@@ -45,9 +42,6 @@ const ImageWithDelete = memo(({ file, index, onRemove, isEditMode = false }) => 
     );
 });
 
-// ============================================
-// 1. مكون الحقل المدخل المحمي من إعادة التصيير
-// ============================================
 const InputField = memo(({
     label,
     value,
@@ -84,9 +78,6 @@ const InputField = memo(({
     );
 });
 
-// ============================================
-// 2. مكون سحب وإفلات الملفات
-// ============================================
 const FileDropZone = memo(({
     label,
     onFileDrop,
@@ -129,7 +120,6 @@ const FileDropZone = memo(({
                 </label>
             </div>
 
-            {/* معاينة الصور مع أزرار الحذف */}
             {files.length > 0 && (
                 <div className="images-preview-container">
                     <h4>الصور المضافة ({files.length})</h4>
@@ -151,9 +141,6 @@ const FileDropZone = memo(({
     );
 });
 
-// ============================================
-// 3. صف اللون المنفصل
-// ============================================
 const ColorRow = memo(({
     index,
     colorData,
@@ -229,9 +216,6 @@ const ColorRow = memo(({
     );
 });
 
-// ============================================
-// 4. مكون جدول الألوان
-// ============================================
 const ColorsTable = memo(({
     colorCount,
     colors,
@@ -271,9 +255,6 @@ const ColorsTable = memo(({
     );
 });
 
-// ============================================
-// 5. فورم الإضافة الرئيسي
-// ============================================
 const AddProductForm = memo(({
     formData,
     onFormChange,
@@ -345,7 +326,6 @@ const AddProductForm = memo(({
 
     return (
         <form className="product-form" onSubmit={handleSubmit}>
-            {/* ملفات الإضافة */}
             <FileDropZone
                 label="صورة المنتج الاساسية (Main Product Image)*"
                 onFileDrop={(e) => handleFileDrop(e, false)}
@@ -368,7 +348,6 @@ const AddProductForm = memo(({
                 files={formData.productImages}
             />
 
-            {/* باقي الحقول */}
             <InputField
                 label="اسم المنتج (Product Name)*"
                 value={formData.productName}
@@ -466,9 +445,6 @@ const AddProductForm = memo(({
     );
 });
 
-// ============================================
-// 6. فورم التعديل
-// ============================================
 const EditProductForm = memo(({
     editProductId,
     setEditProductId,
@@ -758,13 +734,9 @@ const EditProductForm = memo(({
     );
 });
 
-// ============================================
-// 7. مكون عرض بيانات المنتج قبل الحذف
-// ============================================
 const ProductPreviewCard = memo(({ product, standardcollection }) => {
     if (!product) return null;
 
-    // تحويل رمز القسم إلى اسم
     const getDepartmentName = (collectionCode) => {
         return standardcollection[collectionCode] || collectionCode || 'غير محدد';
     };
@@ -837,13 +809,9 @@ const ProductPreviewCard = memo(({ product, standardcollection }) => {
     );
 });
 
-// ============================================
-// 8. مكون عرض بيانات التعليق
-// ============================================
 const CommentPreviewCard = memo(({ comment, product, standardcollection }) => {
     if (!comment || !product) return null;
 
-    // تحويل رمز القسم إلى اسم
     const getDepartmentName = (collectionCode) => {
         return standardcollection[collectionCode] || collectionCode || 'غير محدد';
     };
@@ -864,7 +832,6 @@ const CommentPreviewCard = memo(({ comment, product, standardcollection }) => {
                     <span className="preview-value comment-text">{comment.text || 'غير محدد'}</span>
                 </div>
 
-                {/* تم إزالة: اسم المستخدم، التقييم، تاريخ التعليق */}
 
                 <div className="divider"></div>
 
@@ -895,9 +862,6 @@ const CommentPreviewCard = memo(({ comment, product, standardcollection }) => {
     );
 });
 
-// ============================================
-// 9. قسم حذف التعليقات
-// ============================================
 const DeleteCommentSection = memo(({
     deleteCommentId,
     setDeleteCommentId,
@@ -967,7 +931,6 @@ const DeleteCommentSection = memo(({
                     🔍 جلب بيانات التعليق (Fetch Comment Data)
                 </button>
 
-                {/* معاينة بيانات التعليق */}
                 {previewComment && previewProduct ? (
                     <div className="comment-preview-section">
                         <h4>🔍 معاينة بيانات التعليق:</h4>
@@ -1008,9 +971,6 @@ const DeleteCommentSection = memo(({
     );
 });
 
-// ============================================
-// 10. قسم حذف المنتجات (مصحح)
-// ============================================
 const DeleteProductSection = memo(({
     deleteProductId,
     setDeleteProductId,
@@ -1044,7 +1004,6 @@ const DeleteProductSection = memo(({
                     <p className="hint">الأرقام المتاحة: {productsdata.map(p => p.id).join(', ')}</p>
                 </div>
 
-                {/* معاينة بيانات المنتج */}
                 {previewProduct ? (
                     <div className="product-preview-section">
                         <h4>🔍 معاينة بيانات المنتج:</h4>
@@ -1084,9 +1043,6 @@ const DeleteProductSection = memo(({
     );
 });
 
-// ============================================
-// 11. المكون الرئيسي مع كل الأقسام
-// ============================================
 function Controlpanel() {
     const [productAction, setProductAction] = useState(null);
     const [editProductId, setEditProductId] = useState('');
@@ -1097,19 +1053,6 @@ function Controlpanel() {
     const [previewComment, setPreviewComment] = useState(null);
     const [commentProduct, setCommentProduct] = useState(null);
     const currentYear = new Date().getFullYear();
-
-    // const departments = [
-    //     'كوتشي رجالي',
-    //     'كوتشي شبابي وبناتي',
-    //     'حذاء رجالي',
-    //     'حذاء نسائي',
-    //     'الاكسسوارات (شنطة ظهر)',
-    //     'الاكسسوارات (شنطة كروس)',
-    //     'الاكسسوارات (محفظة)',
-    //     'الاكسسوارات (اسوار يد)',
-    //     'الاكسسوارات (ساعات)',
-    //     'الاكسسوارات (منظف احذية)'
-    // ];
 
     const departments = [
         'كوتشي رجالي',
@@ -1128,19 +1071,6 @@ function Controlpanel() {
         'الاكسسوارات (خاتم)',
         'الاكسسوارات (سلسلة)'
     ];
-
-    // const standardcollection = {
-    //     "btn-2": 'كوتشي رجالي',
-    //     "btn-3": 'كوتشي شبابي وبناتي',
-    //     "btn-4": 'حذاء رجالي',
-    //     "btn-5": 'حذاء نسائي',
-    //     "btn-6-1": 'الاكسسوارات (شنطة ظهر)',
-    //     "btn-6-2": 'الاكسسوارات (شنطة كروس)',
-    //     "btn-6-3": 'الاكسسوارات (محفظة)',
-    //     "btn-6-4": 'الاكسسوارات (اسوار يد)',
-    //     "btn-6-5": 'الاكسسوارات (ساعات)',
-    //     "btn-6-6": 'الاكسسوارات (منظف احذية)',
-    // };
 
     const standardcollection = {
         "btn-2": 'كوتشي رجالي',
@@ -1189,14 +1119,12 @@ function Controlpanel() {
         sizes: []
     });
 
-    // حساب إجمالي التعليقات
     const totalCommentsCount = useMemo(() => {
         return productsdata.reduce((total, product) => {
             return total + (product.comments?.length || 0);
         }, 0);
     }, []);
 
-    // === دوال الإضافة ===
     const handleAddFormChange = useCallback((field, value) => {
         setAddFormData(prev => {
             if (field === 'colorCount') {
@@ -1260,7 +1188,6 @@ function Controlpanel() {
         });
     }, [addFormData]);
 
-    // === دوال التعديل ===
     const handleEditFormChange = useCallback((field, value) => {
         setEditFormData(prev => {
             if (field === 'colorCount') {
@@ -1330,7 +1257,6 @@ function Controlpanel() {
         });
     }, []);
 
-    // === useEffect لتحديث معاينة المنتج ===
     useEffect(() => {
         if (productAction === 'delete' && deleteProductId.trim()) {
             const productId = parseInt(deleteProductId);
@@ -1345,7 +1271,6 @@ function Controlpanel() {
         }
     }, [deleteProductId, productAction]);
 
-    // === دوال حذف المنتج ===
     const handleDeleteSubmit = useCallback(() => {
         if (!deleteProductId.trim()) {
             alert('يرجى إدخال رقم المنتج');
@@ -1387,14 +1312,12 @@ function Controlpanel() {
         }
     }, [deleteProductId, previewProduct, standardcollection]);
 
-    // === دالة جلب بيانات التعليق ===
     const handleFetchComment = useCallback((commentId) => {
         if (!commentId) {
             alert('يرجى إدخال رقم التعليق أولاً');
             return;
         }
 
-        // البحث عن التعليق
         let foundComment = null;
         let foundProduct = null;
 
@@ -1420,7 +1343,6 @@ function Controlpanel() {
         }
     }, []);
 
-    // === دوال حذف التعليق ===
     const handleDeleteCommentSubmit = useCallback(() => {
         if (!deleteCommentId.trim()) {
             alert('يرجى إدخال رقم التعليق');
@@ -1464,7 +1386,6 @@ function Controlpanel() {
         }
     }, [deleteCommentId, previewComment, commentProduct]);
 
-    // === دوال التحكم في الأقسام ===
     const handleAddProductClick = useCallback(() => {
         setProductAction('add');
         setEditProductId('');
